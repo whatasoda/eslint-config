@@ -23,8 +23,11 @@ module.exports = {
     }
   },
   rules: {
-    'prettier/prettier': ['error', prettierrc, { "usePrettierrc": false }],
     'no-console': 'error',
+    'no-unused-vars': ['error', {
+      argsIgnorePattern: '^_',
+    }],
+    'prettier/prettier': ['error', prettierrc, { "usePrettierrc": false }],
     'react/jsx-uses-vars': 1,
     'react/jsx-uses-react': 1,
     'react-hooks/rules-of-hooks': 'error',
