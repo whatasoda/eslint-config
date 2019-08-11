@@ -1,0 +1,19 @@
+{
+  "name": "@whatasoda/eslintrc",
+  "version": "1.0.0",
+  "description": "my eslintrc",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "eslint 'test/**/*.{ts,tsx}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whatasoda/eslintrc.git"
+  },
+  "author": "whatasoda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whatasoda/eslintrc/issues"
+  },
+  "homepage": "https://github.com/whatasoda/eslintrc#readme"
+}
