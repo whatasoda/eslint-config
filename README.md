@@ -1,0 +1,2 @@
+# eslintrc
+my .eslintrc
