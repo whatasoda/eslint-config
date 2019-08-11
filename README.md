@@ -10,3 +10,14 @@ npm i -D @whatasoda/eslint-config
 npm i react react-dom
 npm i -D typescript
 ```
+
+## usage
+.eslintrc.js
+```js
+module.exports = {
+  extends: ['@whatasoda'],
+  parserOptions: {
+    project: './tsconfig.json',
+  }
+}
+```
