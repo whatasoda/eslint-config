@@ -1,7 +1,7 @@
 {
-  "name": "@whatasoda/eslintrc",
+  "name": "@whatasoda/eslint-config",
   "version": "1.0.0",
-  "description": "my eslintrc",
+  "description": "@whatasoda/eslint-config",
   "main": ".eslintrc.js",
   "files": [],
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/whatasoda/eslintrc.git"
+    "url": "git+https://github.com/whatasoda/eslint-config.git"
   },
   "author": "whatasoda",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/whatasoda/eslintrc/issues"
+    "url": "https://github.com/whatasoda/eslint-config/issues"
   },
-  "homepage": "https://github.com/whatasoda/eslintrc#readme",
+  "homepage": "https://github.com/whatasoda/eslint-config#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
