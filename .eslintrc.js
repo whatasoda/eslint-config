@@ -1,8 +1,9 @@
+const prettierrc = require('./.prettierrc.json');
+
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
-    project: './tsconfig.json',
     ecmaFeatures: {
       jsx: true,
     },
@@ -12,17 +13,17 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
-    'plugin:prettier/recommended',
     'prettier/@typescript-eslint',
     'prettier/react',
   ],
-  plugins: ['@typescript-eslint', 'react', 'react-hooks'],
+  plugins: ['prettier', '@typescript-eslint', 'react', 'react-hooks'],
   settings: {
     react: {
       version: 'detect',
     }
   },
   rules: {
+    'prettier/prettier': ['error', prettierrc, { "usePrettierrc": false }],
     'no-console': 'error',
     'react/jsx-uses-vars': 1,
     'react/jsx-uses-react': 1,

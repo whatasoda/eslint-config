@@ -1,0 +1,6 @@
+{
+  "extends": "@whatasoda/tsconfig",
+  "compilerOptions": {
+    "rootDir": "./"
+  }
+}
