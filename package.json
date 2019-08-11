@@ -3,7 +3,6 @@
   "version": "1.0.2",
   "description": "@whatasoda/eslint-config",
   "main": ".eslintrc.js",
-  "files": [],
   "scripts": {
     "test": "eslint 'test/**/*.{ts,tsx}'"
   },
