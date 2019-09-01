@@ -1,6 +1,6 @@
 {
   "name": "@whatasoda/eslint-config",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "whatasoda's awesome eslint-config 🚀",
   "main": ".eslintrc.js",
   "publishConfig": {
