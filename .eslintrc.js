@@ -27,6 +27,7 @@ module.exports = {
     'no-unused-vars': ['error', {
       argsIgnorePattern: '^_',
     }],
+    'no-dupe-class-members': 'off',
     'prettier/prettier': ['error', prettierrc, { "usePrettierrc": false }],
     'react/jsx-uses-vars': 1,
     'react/jsx-uses-react': 1,
