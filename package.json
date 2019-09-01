@@ -3,6 +3,9 @@
   "version": "1.0.8",
   "description": "whatasoda's awesome eslint-config 🚀",
   "main": ".eslintrc.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "test": "eslint 'test/**/*.{ts,tsx}'"
   },
