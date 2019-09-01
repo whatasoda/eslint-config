@@ -1,7 +1,7 @@
 {
   "name": "@whatasoda/eslint-config",
   "version": "1.0.7",
-  "description": "@whatasoda/eslint-config",
+  "description": "whatasoda's awesome eslint-config 🚀",
   "main": ".eslintrc.js",
   "scripts": {
     "test": "eslint 'test/**/*.{ts,tsx}'"

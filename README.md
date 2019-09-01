@@ -1,5 +1,7 @@
 # @whatasoda/eslint-config
 
+whatasoda's awesome eslint-config 🚀
+
 ## Setup your `.npmrc`
 If you did it before, you can skip it.
 1. Create an access token with permmision `read:packages`.
