@@ -32,7 +32,7 @@ module.exports = {
     'react/jsx-uses-vars': 1,
     'react/jsx-uses-react': 1,
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': 'off',
     '@typescript-eslint/prefer-interface': 'off',
     '@typescript-eslint/no-unused-vars': ['error', { args: 'none' }],
     'import/no-extraneous-dependencies': ['error', {
