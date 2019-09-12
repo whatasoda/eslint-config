@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+Object {
+  "errorCount": 2,
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 2,
+      "filePath": "/Users/whatasoda/Documents/eslint-config/samples/index.ts",
+      "fixableErrorCount": 0,
+      "fixableWarningCount": 0,
+      "messages": Array [
+        Object {
+          "column": 7,
+          "endColumn": 13,
+          "endLine": 7,
+          "line": 7,
+          "message": "'unused' is assigned a value but never used.",
+          "nodeType": "Identifier",
+          "ruleId": "no-unused-vars",
+          "severity": 2,
+        },
+        Object {
+          "column": 7,
+          "endColumn": 13,
+          "endLine": 7,
+          "line": 7,
+          "message": "'unused' is assigned a value but never used.",
+          "nodeType": "Identifier",
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 2,
+        },
+      ],
+      "warningCount": 0,
+    },
+  ],
+  "usedDeprecatedRules": Array [],
+  "warningCount": 0,
+}
+`;

@@ -7,7 +7,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
-    "test": "eslint 'test/**/*.{ts,tsx}'"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -36,9 +36,14 @@
     "react-dom": "*"
   },
   "devDependencies": {
+    "@types/eslint": "^6.1.1",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.5",
     "@whatasoda/tsconfig": "^1.0.3",
+    "jest": "^24.9.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.6.3"
   }
 }
