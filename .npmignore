@@ -1,3 +1,5 @@
-script
-test
+__tests__
+.github
+samples
+jest.config.js
 tsconfig.json
