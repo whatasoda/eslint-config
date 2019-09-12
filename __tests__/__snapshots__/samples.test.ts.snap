@@ -8,7 +8,6 @@ Object {
   "results": Array [
     Object {
       "errorCount": 2,
-      "filePath": "/Users/whatasoda/Documents/eslint-config/samples/index.ts",
       "fixableErrorCount": 0,
       "fixableWarningCount": 0,
       "messages": Array [

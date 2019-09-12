@@ -10,6 +10,7 @@ it('snapshot', () => {
   const report = cli.executeOnFiles(['./samples/']);
   report.results.forEach((result) => {
     delete result.source;
+    delete result.filePath;
   });
   expect(report).toMatchSnapshot();
 });
