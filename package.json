@@ -20,12 +20,12 @@
   },
   "homepage": "https://github.com/whatasoda/eslint-config#readme",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.2.1-alpha.7",
-    "@typescript-eslint/parser": "^2.2.1-alpha.7",
-    "eslint": "^6.3.0",
+    "@typescript-eslint/eslint-plugin": "^2.3.0",
+    "@typescript-eslint/parser": "^2.3.0",
+    "eslint": "^6.4.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "prettier": "^1.18.2"
@@ -43,7 +43,7 @@
     "jest": "^24.9.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "ts-jest": "^24.0.2",
+    "ts-jest": "^24.1.0",
     "typescript": "^3.6.3"
   }
 }
