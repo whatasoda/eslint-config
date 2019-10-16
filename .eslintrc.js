@@ -10,9 +10,6 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
     'prettier/@typescript-eslint',
     'prettier/react',
   ],
@@ -35,10 +32,6 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'off',
     '@typescript-eslint/prefer-interface': 'off',
     '@typescript-eslint/no-unused-vars': ['error', { args: 'none' }],
-    'import/no-extraneous-dependencies': ['error', {
-      devDependencies: true,
-      optionalDependencies: false,
-    }],
   },
   globals: {
     process: true,
