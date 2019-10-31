@@ -3,6 +3,8 @@ const prettierrc = require('./.prettierrc.json');
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
+    // remove this line after typescript-eslint fixed
+    createDefaultProgram: true,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
@@ -25,6 +27,7 @@ module.exports = {
       argsIgnorePattern: '^_',
     }],
     'no-dupe-class-members': 'off',
+    'no-undef': 'off',
     'prettier/prettier': ['error', prettierrc, { "usePrettierrc": false }],
     'react/jsx-uses-vars': 1,
     'react/jsx-uses-react': 1,
