@@ -30,9 +30,10 @@
     "prettier": "^1.19.0"
   },
   "peerDependencies": {
-    "typescript": "*",
-    "react": "*",
-    "react-dom": "*"
+    "typescript": "*"
+  },
+  "optionalDependencies": {
+    "react": "*"
   },
   "devDependencies": {
     "@types/eslint": "^6.1.3",

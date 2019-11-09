@@ -1,4 +1,13 @@
-const prettierrc = require('./.prettierrc.json');
+const hasReact = (() => {
+  try {
+    require('react/package.json');
+    return true;
+  } catch (e) {
+    return false;
+  }
+})();
+
+const ifReact = (obj) => hasReact ? obj : Array.isArray(obj) ? [] : {};
 
 module.exports = {
   parser: '@typescript-eslint/parser',
@@ -7,19 +16,21 @@ module.exports = {
     createDefaultProgram: true,
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true,
+      ...ifReact({ jsx: true }),
     },
   },
   extends: [
     'eslint:recommended',
     'prettier/@typescript-eslint',
-    'prettier/react',
+    ...ifReact(['prettier/react']),
   ],
-  plugins: ['prettier', '@typescript-eslint', 'react', 'react-hooks'],
+  plugins: [
+    'prettier',
+    '@typescript-eslint',
+    ...ifReact(['react', 'react-hooks']),
+  ],
   settings: {
-    react: {
-      version: 'detect',
-    }
+    ...ifReact({ react: { version: 'detect' } }),
   },
   rules: {
     'no-console': 'error',
@@ -28,13 +39,15 @@ module.exports = {
     }],
     'no-dupe-class-members': 'off',
     'no-undef': 'off',
-    'prettier/prettier': ['error', prettierrc, { "usePrettierrc": false }],
-    'react/jsx-uses-vars': 1,
-    'react/jsx-uses-react': 1,
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'off',
+    'prettier/prettier': ['error', require('./.prettierrc.json'), { "usePrettierrc": false }],
     '@typescript-eslint/prefer-interface': 'off',
     '@typescript-eslint/no-unused-vars': ['error', { args: 'none' }],
+    ...ifReact({
+      'react/jsx-uses-vars': 1,
+      'react/jsx-uses-react': 1,
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'off',
+    }),
   },
   globals: {
     process: true,
