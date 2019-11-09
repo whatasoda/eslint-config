@@ -12,8 +12,6 @@ const ifReact = (obj) => hasReact ? obj : Array.isArray(obj) ? [] : {};
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    // remove this line after typescript-eslint fixed
-    createDefaultProgram: true,
     sourceType: 'module',
     ecmaFeatures: {
       ...ifReact({ jsx: true }),
