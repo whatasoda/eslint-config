@@ -23,8 +23,9 @@ module.exports = {
     ...ifReact(['prettier/react']),
   ],
   plugins: [
-    'prettier',
     '@typescript-eslint',
+    'prettier',
+    'prettier/@typescript-eslint',
     ...ifReact(['react', 'react-hooks']),
   ],
   settings: {
