@@ -19,13 +19,13 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'prettier/@typescript-eslint',
+    'prettier',
     ...ifReact(['prettier/react']),
+    'prettier/@typescript-eslint',
   ],
   plugins: [
-    '@typescript-eslint',
     'prettier',
-    'prettier/@typescript-eslint',
+    '@typescript-eslint',
     ...ifReact(['react', 'react-hooks']),
   ],
   settings: {
