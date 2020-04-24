@@ -17,7 +17,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-    - run: npm test
+    - run: |
+        npm test
+        bash <(curl -s https://codecov.io/bash) -t ${{secrets.codecov_token}}
       env:
         CI: true
 
