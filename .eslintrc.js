@@ -24,17 +24,19 @@ module.exports = {
   },
   rules: {
     'no-console': 'error',
-    'no-unused-vars': [
-      'error',
-      {
-        argsIgnorePattern: '^_',
-      },
-    ],
+    'no-redeclare': 'off',
+    'no-unused-vars': 'off',
     'no-dupe-class-members': 'off',
     'no-undef': 'off',
     'prettier/prettier': ['error', require('./.prettierrc.json'), { usePrettierrc: false }],
     '@typescript-eslint/prefer-interface': 'off',
-    '@typescript-eslint/no-unused-vars': ['error', { args: 'none' }],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        args: 'after-used',
+        argsIgnorePattern: '^_',
+      },
+    ],
     ...ifReact({
       'react/jsx-uses-vars': 1,
       'react/jsx-uses-react': 1,
