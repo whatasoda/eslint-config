@@ -1,16 +1,17 @@
-import { CLIEngine } from 'eslint';
-import path from 'path';
+import { ESLint } from 'eslint';
 
-const cli = new CLIEngine({
-  cwd: path.resolve(__dirname, '../'),
+const CWD = process.cwd();
+const cli = new ESLint({
+  cwd: CWD,
   extensions: ['ts', 'tsx'],
+  baseConfig: require('../.eslintrc'),
 });
 
-it('snapshot', () => {
-  const report = cli.executeOnFiles(['./samples/']);
-  report.results.forEach((result) => {
+it('snapshot', async () => {
+  const results = await cli.lintFiles(['./samples/**/*']);
+  results.forEach((result) => {
     delete result.source;
-    delete result.filePath;
+    result.filePath = result.filePath.slice(CWD.length);
   });
-  expect(report).toMatchSnapshot();
+  expect(results).toMatchSnapshot();
 });
