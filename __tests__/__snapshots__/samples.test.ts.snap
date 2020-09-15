@@ -3,22 +3,11 @@
 exports[`snapshot 1`] = `
 Array [
   Object {
-    "errorCount": 2,
+    "errorCount": 1,
     "filePath": "/samples/index.ts",
     "fixableErrorCount": 0,
     "fixableWarningCount": 0,
     "messages": Array [
-      Object {
-        "column": 7,
-        "endColumn": 13,
-        "endLine": 7,
-        "line": 7,
-        "message": "'unused' is assigned a value but never used.",
-        "messageId": "unusedVar",
-        "nodeType": "Identifier",
-        "ruleId": "no-unused-vars",
-        "severity": 2,
-      },
       Object {
         "column": 7,
         "endColumn": 13,
