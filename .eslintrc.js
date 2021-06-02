@@ -44,15 +44,4 @@ module.exports = {
       'react-hooks/exhaustive-deps': 'off',
     }),
   },
-  globals: {
-    process: true,
-    module: true,
-    app: true,
-  },
-  env: {
-    jest: true,
-    es6: true,
-    browser: true,
-    node: true,
-  },
 };
